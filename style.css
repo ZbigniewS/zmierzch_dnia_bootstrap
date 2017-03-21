@@ -1,0 +1,163 @@
+body {
+    background-color: wheat;
+    font-family: 'Abril Fatface', sans-serif;
+}
+.navbar-brand {
+    margin-left: 15px;
+}
+nav .navbar-form {
+    font-size: 14px;
+}
+
+img {
+    max-height: 245px;
+    max-width: 380px;
+}
+.jumbotron {
+    background-image: url(https://static.pexels.com/photos/302101/pexels-photo-302101.jpeg)
+}
+.jumbotron .btn {
+    font-size: 32px;
+    background-color: green;
+}
+
+h1 small{
+    color: white;
+}
+h1, h2 {
+    padding: 25px;
+    text-transform: uppercase;
+}
+h2, h3, h4 {
+    font-style: italic;
+}
+/* gallery css*/
+.thumbnail {
+    border: sandybrown;
+}
+.panel {
+    margin-top: 20px;
+}
+.proposition img {
+    min-height: 180px;
+}
+.proposition img:hover {
+    cursor: pointer;
+}
+.proposition button{
+    margin-top: 5px;
+}
+/* table css*/
+.table, .panel, .proposition, .news {
+    max-width: 1200px;
+    margin: 30px auto;
+}
+.vote {
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
+}
+/* contact css*/
+.contact {
+    max-width: 600px;
+    margin: 0 auto;
+}
+footer {
+    height: 50px;
+    padding-top: 20px;
+}
+th {
+text-align: center;
+}
+/* css carusel*/
+[class*="slide"]{
+  min-height:400px;
+}
+.slide-1 {
+    background-image: url(https://static.pexels.com/photos/139951/pexels-photo-139951.jpeg);
+    background-size: cover;
+}
+.slide-2 {
+    background-image: url(https://static.pexels.com/photos/301396/pexels-photo-301396.jpeg);
+    background-size: cover;
+}
+.slide-3 {
+    background-image: url(https://static.pexels.com/photos/206353/pexels-photo-206353.jpeg);
+    background-size: cover;
+}
+.slide-4 {
+    background-image: url(https://static.pexels.com/photos/227416/pexels-photo-227416.jpeg);
+    background-size: cover;
+}
+.slide-5 {
+    background-image: url(https://static.pexels.com/photos/261088/pexels-photo-261088.jpeg);
+    background-size: cover;
+}
+.carousel-indicators li {
+    border-color: red;
+    width: 13px;
+    height: 13px;
+}
+.carousel-indicators .active {
+    width: 14px;
+    height: 14px;
+    border-color: yellow;
+}
+.dropdown {
+    margin: 30px auto;
+    max-width: 150px;
+}
+.dropdown .btn {
+    margin: 0 auto;
+    padding: 10px;
+}
+/* tab-content css*/
+.TABS {
+    max-width: 1200px;
+    margin: 25px auto;
+}
+/* modal css */
+.Zmodal {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 40px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: green;
+    border-color: red;
+}
+.modal-footer {
+    text-align: center;
+}
+.modal-title {
+    text-transform: uppercase;
+
+}
+/* example css*/
+
+/*
+[class*="example"]{
+  min-height:500px;
+}
+.example-1 {
+	background-color:#59ABE3;
+}
+.example-2 {
+	background-color:#2ECC71;
+}
+.example-3 {
+	background-color: #F89406;
+}
+.example-4 {
+	background-color:#EB974E;
+}
+*/
+
+@media (min-width:992px) and (max-width:1199px) {
+    .proposition img {
+        min-height: 234px;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pracujemy JS Bootrapem - Foto-travel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <link href="http://fonts.googleapis.com/css?family=Abril+Fatface&subset=latin,latin-ext" rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid text-center row">
+            <div class="navbar-header col-lg-2">
+                <a class="navbar-brand" href="#">Foto-travel</a>
+            </div>
+            <div class="col-lg-7">
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#Galeria">Galeria</a></li>
+                    <li><a href="#Article">Artykuły</a></li>
+                    <li><a href="#Carousel">Karuzela</a></li>
+                    <li><a href="#TABS">Tabs</a></li>
+                    <li><a href="#Kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Szukaj">
+                    </div>
+                    <button type="submit" class="btn btn-default">Szukaj</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- hero -->
+    <section class="text-center jumbotron">
+        <h1>Zmierzch dnia <br><small>ciągle na początku drogi a wieczór na wyciągnięcie dłoni</small></h1>
+        <button class="btn btn-primary">Zapraszam</button>
+    </section>
+    <!-- gallery-->
+    <section class="container-fluid text-center" id="Galeria">
+        <h2>Galeria zmierzchu</h2>
+        <div class="row">
+            <img src="https://static.pexels.com/photos/268533/pexels-photo-268533.jpeg" alt="zmierzch Śniardwy" title="Zmierzch Sniardwy"
+                class="img-responsive img-thumbnail col-lg-3">
+            <img src="https://static.pexels.com/photos/132824/pexels-photo-132824.jpeg" alt="zmierzch Ustrzyki" title="Zmierzch Ustrzyki"
+                class="img-responsive img-thumbnail col-lg-3">
+            <img src="https://static.pexels.com/photos/296849/pexels-photo-296849.jpeg" alt="zmierzch Złoty Stok" title="Zmierzch Złoty Stok"
+                class="img-responsive img-thumbnail col-lg-3">
+            <img src="https://static.pexels.com/photos/131277/pexels-photo-131277.jpeg" alt="zmierzch Równica
+            " title="Zmierzch Równica" class="img-responsive img-thumbnail col-lg-3">
+    </section>
+    <!-- table -->
+    <section class="text-center">
+        <h2>Ocenione zdjęcia</h2>
+        <table class="table table-striped">
+            <thead>
+                <th>Miejsce</th>
+                <th>Region</th>
+                <th>Ocena</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Śniardwy</td>
+                    <td>Mazury</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Ustrzyki</td>
+                    <td>Bieszczady</td>
+                    <td>4.7</td>
+                </tr>
+                <tr>
+                    <td>Złoty Stok</td>
+                    <td>Kotlina Kłodzka</td>
+                    <td>4.8</td>
+                </tr>
+                <tr>
+                    <td>Równica</td>
+                    <td>Karkonosze</td>
+                    <td>4.6</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!-- gallery to vote-->
+    <div class="panel panel-default text-center">
+        <div class="panel-heading">
+            <h3>Nowe propozycje do galerii</h3>
+        </div>
+        <div class="panel-body">
+            Dziś zgodnie z zapowiedzią prezentujemy nowe zdjęcia. Prosimy o uwagi czy chcecie je zobaczyć w głównej galerii.
+        </div>
+    </div>
+    <div class="container proposition container-fluid text-center">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-sm-12">
+                <img src="https://static.pexels.com/photos/237304/pexels-photo-237304.jpeg" alt="Granica" class="img-responsive img-thumbnail"
+                    title="Granica">
+                <button type="button" class="btn btn-default">Głosuj</button>
+            </div>
+            <div class="col-md-3 col-sm-6 col-sm-12">
+                <img src="https://static.pexels.com/photos/281450/pexels-photo-281450.jpeg" alt="Atol" class="img-responsive img-thumbnail"
+                    title="Atol">
+                <button type="button" class="btn btn-default">Głosuj</button>
+            </div>
+            <div class="col-md-3 col-sm-6 col-sm-12">
+                <img src="https://static.pexels.com/photos/297975/pexels-photo-297975.jpeg" alt="Zalew" class="img-responsive img-thumbnail"
+                    title="Zalew">
+                <button type="button" class="btn btn-default">Głosuj</button>
+            </div>
+            <div class="col-md-3 col-sm-6 col-sm-12">
+                <img src="https://static.pexels.com/photos/315982/pexels-photo-315982.jpeg" alt="Morze" class="img-responsive img-thumbnail"
+                    title="Morze">
+                <button type="button" class="btn btn-default">Głosuj</button>
+            </div>
+        </div>
+    </div>
+    <div class="container vote">
+        <div class="list-group">
+            <a href="#" class="list-group-item active">Oddane głosy<span class="badge">35</span></a>
+            <a href="#" class="list-group-item">Granica<span class="badge">13</span></a>
+            <a href="#" class="list-group-item">Atol<span class="badge">12</span></a>
+            <a href="#" class="list-group-item">Zalew<span class="badge">6</span></a>
+            <a href="#" class="list-group-item">Morze<span class="badge">4</span></a>
+        </div>
+    </div>
+    <!-- news media -->
+    <section class="news container">
+        <div class="media">
+            <div class="media-left">
+                <a href="http://www.spidersweb.pl/2013/02/fotografia-nocna.html">
+                    <img class="media-object" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKARjyfiP5OJu6mCDxl6qOxpO5oHtDpyHDiQ6Ptjg2sjufEBvz"
+                        alt="Zmierzch nad wodą">
+                </a>
+            </div>
+            <div class="media-body" id="Article">
+                <h4 class="media-heading">Czy zmierzch nad wodą jest najpiekniejszy?</h4>
+                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
+                    purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                    fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla
+                    vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus
+                    viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    <a href="http://www.spidersweb.pl/2013/02/fotografia-nocna.html"> fotografia nocna</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- -->
+    <div class="container-fluid text-center" id="Carousel">
+        <h2>Karuzela widokówek wakacyjnych</h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <!-- Indicators -->
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+            <!-- slide -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active slide-1">
+                </div>
+                <div class="item slide-2">
+                </div>
+                <div class="item slide-3">
+                </div>
+                <div class="item slide-4">
+                </div>
+                <div class="item slide-5">
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!-- section tabs-->
+    <section class="TABS" id="TABS">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+            <li><a data-toggle="tab" href="#menu1">Hobby</a></li>
+            <li><a data-toggle="tab" href="#menu2">Test implementacji</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h3>HOME</h3>
+                <p>Strona testująca rozwiązania Bootstrapa. Chwilowo to miks wielu opcji na jednej zakładce ale już ta opcje
+                    daje spore możliwiości manewru.</p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h3>Hobby</h3>
+                <p>Programowanie hoobystyczne podnieść na poziom pozwalający w ciekawy sposób prezentować inne hobby.</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h3>Galeria</h3>
+                <p>Test zaimplementowania galeri do zakłądki</p>
+                <div class="container proposition container-fluid text-center" id="Vote">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-sm-12">
+                            <img src="https://static.pexels.com/photos/237304/pexels-photo-237304.jpeg" alt="Granica" class="img-responsive img-thumbnail"
+                                title="Granica">
+                            <button type="button" class="btn btn-default">Głosuj</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-sm-12">
+                            <img src="https://static.pexels.com/photos/281450/pexels-photo-281450.jpeg" alt="Atol" class="img-responsive img-thumbnail"
+                                title="Atol">
+                            <button type="button" class="btn btn-default">Głosuj</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-sm-12">
+                            <img src="https://static.pexels.com/photos/297975/pexels-photo-297975.jpeg" alt="Zalew" class="img-responsive img-thumbnail"
+                                title="Zalew">
+                            <button type="button" class="btn btn-default">Głosuj</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-sm-12">
+                            <img src="https://static.pexels.com/photos/315982/pexels-photo-315982.jpeg" alt="Morze" class="img-responsive img-thumbnail"
+                                title="Morze">
+                            <button type="button" class="btn btn-default">Głosuj</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section modal -->
+    <section class="Zmodal text-center">
+    <h2>Test modala</h2>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Poznaj autora</button>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Autor projektu i tematyka</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Witryna stworzona w trakcie modułu Bootstrap w praktyce. Autorem projektu graficznego i treści znajdujących się na witrynie jest Zbigniew Sitarz.
+                        Bootcamp realizowany w ramach kursu Kodilli. Mentorem niniejszego projektu jest Bartek Kozera. Serdeczne pozdrowienia dla mentora.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Zamknij</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- section option menu powrotne-->
+    <div class="dropdown text-center">
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Menu powrotne
+  <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+            <li role="presentation"><a role="menuitem" href="#Home">Home</a></li>
+            <li role="presentation"><a role="menuitem" href="#Galeria">Galeria</a></li>
+            <li role="presentation"><a role="menuitem" href="#Article">Artykuły</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" href="#">O nas</a></li>
+        </ul>
+    </div>
+    <!-- section contact-->
+    <section class="text-center" id="Kontakt">
+        <h2> Skontaktuj się z nami</h2>
+        <div class="contact">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputName1">Nick / Imię</label>
+                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Adam Adamski">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Adres mailowy</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                </div>
+                <div class="textarea">
+                    <textarea class="form-control" rows="5" placeholder="Wpisz treść wiadomości"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default">Wyślij wiadomość</button>
+            </form>
+        </div>
+    </section>
+    <footer class="text-center">
+        <small>&copy; Foto-travel 2017</small>
+    </footer>
+</body>
+
+</html>
