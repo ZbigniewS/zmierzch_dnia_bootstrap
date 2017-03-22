@@ -1,0 +1,29 @@
+{
+  "name": "kodilla_7_2_5_3",
+  "version": "1.0.0",
+  "description": "ex5_3 in ex7_2",
+  "main": "index.js",
+  "scripts": {
+    "test": "kodilla-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZbigniewS/zmierzch_dnia_bootstrap.git"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Zbigniew Sitarz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZbigniewS/zmierzch_dnia_bootstrap/issues"
+  },
+  "homepage": "https://github.com/ZbigniewS/zmierzch_dnia_bootstrap#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0",
+    "watch": "^1.0.2"
+  }
+}
